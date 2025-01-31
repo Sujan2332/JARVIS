@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const geminiAPI = axios.create({
-  baseURL: 'http://localhost:5000', // Make sure your backend is running on this port
+  baseURL: import.meta.env.VITE_BACKEND , // Make sure your backend is running on this port
 });
 
 export const fetchGeminiData = async (data) => {
