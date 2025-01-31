@@ -379,6 +379,7 @@ img{
   .app-container {
     width: 95vw;
     padding: 10px;
+    margin: 55px 0px;
   }
 
   .gemini-jarvis {
@@ -417,7 +418,6 @@ img{
   img{
     height: 400px;
     width: 400px;
-    margin-bottom: 100px;
   }
 .fa-volume-high{
   font-size: 15px;
