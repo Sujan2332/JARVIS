@@ -9,7 +9,6 @@
 html,body{
   background: black;
   color: white;
-  background: linear-gradient(285deg, #232323, #4b00b0);  /* Black to dark purple gradient */
 }
 body {
   background: linear-gradient(-285deg, #1a1a1a 50%, #4b00b0 90%);  /* 80% black with 10% purple */
