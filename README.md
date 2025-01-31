@@ -4,16 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>J.A.R.V.I.S. - AI Assistant</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      font-style:italic;
-      background-color: #1a1a1a;
-      color: #ffffff;
-      text-align: center;
-      line-height: 1.6;
-    }
-  </style>
 </head>
 <body>
   <h1>Welcome to J.A.R.V.I.S.<br><span class="AI">- The AI Assistant</span></h1>
