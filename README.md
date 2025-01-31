@@ -7,74 +7,11 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
+      font-style:italic;
       background-color: #1a1a1a;
       color: #ffffff;
       text-align: center;
       line-height: 1.6;
-    }
-
-    h1 {
-      font-style: italic;
-      font-weight: bold;
-      text-decoration: underline;
-    }
-
-    h3 {
-      font-weight: bold;
-      font-style: italic;
-      text-decoration: underline;
-    }
-
-    p {
-      font-style: italic;
-    }
-
-    ul {
-      font-style: italic;
-      text-align: left;
-      margin: 0 auto;
-      display: inline-block;
-      padding: 10px;
-    }
-
-    li {
-      margin: 5px;
-      list-style-type: disc;
-    }
-
-    .code-block {
-      font-family: monospace;
-      background-color: #333;
-      padding: 15px;
-      border-radius: 5px;
-    }
-
-    .code-heading {
-      font-weight: bold;
-      font-size: 18px;
-    }
-
-    .gemini-jarvis {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .AI {
-      font-size: 1.5rem;
-      color: #f39c12;
-    }
-
-    .speech-buttons button {
-      background-color: #2980b9;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    .speech-buttons button:hover {
-      background-color: #3498db;
     }
   </style>
 </head>
