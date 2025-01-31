@@ -77,9 +77,4 @@ npm start
 ## *License 🔒*
 *This project is licensed under the MIT License - see the LICENSE file for details.*
 
-Enjoy using J.A.R.V.I.S., your friendly AI assistant! ✨
-kotlin
-Copy
-Edit
-
-This README is styled in a way that adds personality to your project, making it easy to unders
+# *Enjoy using J.A.R.V.I.S., your friendly AI assistant! ✨*
