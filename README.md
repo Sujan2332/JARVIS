@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>J.A.R.V.I.S. - AI Assistant</title>
-</head>
-<body style="font-family: Arial, sans-serif; background-color: #1a1a1a; color: #ffffff; text-align: center; padding: 20px; line-height: 1.6;">
-  <h1 style="font-style: italic; font-weight: bold; text-decoration: underline;">Welcome to J.A.R.V.I.S. <br><span style="font-size: 1.5rem; color: #f39c12;">- The AI Assistant</span></h1>
+<body style="font-family: Arial, sans-serif;font-style:italic; background-color: #1a1a1a; color: #ffffff; text-align: center; padding: 20px; line-height: 1.6;">
+  <h2 style="font-style: italic; font-weight: bold; text-decoration: underline;">Welcome to J.A.R.V.I.S. <br><span style="font-size: 1.5rem; color: #f39c12;">- The AI Assistant</span></h2>
   
   <p style="font-style: italic;">J.A.R.V.I.S. is a versatile AI assistant designed to respond to voice commands and help with various tasks like playing songs, providing weather updates, setting reminders, and much more. It's powered by the Gemini API for intelligent responses! 🤖💡</p>
 
