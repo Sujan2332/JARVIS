@@ -3,7 +3,7 @@
 ## *Welcome to J.A.R.V.I.S., your personal assistant powered by React and Gemini AI!*
 
 ---
-## *Preview*
+## *Preview 📺*
 ### *[Talk with JARVIS 🤖](https://jarvis-jarvis-jarvis.onrender.com/)*
 
 ## *Features* 🎉
