@@ -21,7 +21,7 @@ const genAI = new GoogleGenerativeAI(API_KEY);  // Pass API key here
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });  // Specify Gemini model
 
 app.use(cors({
-    origin: 'https://jarvis-jarvis-jarvis.onrender.com/', // Add your frontend URL
+    origin: ['https://jarvis-jarvis-jarvis.onrender.com', 'http://localhost:5173'], // Add your frontend URL
     methods: 'GET,POST', // Add allowed methods if necessary
   }));
   
