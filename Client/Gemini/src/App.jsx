@@ -19,6 +19,10 @@ const App = () => {
   const [speaking, setSpeaking] = useState(false);
   const [videoId, setVideoId] = useState(null); // Store YouTube Video ID
   const [timeoutId, setTimeoutId] = useState(null);
+  const [weather, setWeather] = useState("")
+  const [math,setMath] = useState("")
+  const [joke,setJoke] = useState("")
+
   // Speak function
   const speak = (text) => {
     utterance = new SpeechSynthesisUtterance(text);
@@ -84,6 +88,7 @@ const App = () => {
 
   // Execute voice commands
   const takeCommand = (message) => {
+    console.log(message)
     if (message.includes("hey") || message.includes("hello")|| message.includes("hi") || message.includes("jarvis")) {
       speak("Hello Sir, How may I assist you?");
     }else if (message.includes("open x")) {
@@ -152,9 +157,14 @@ const App = () => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=fd567f58abe28cf6525b57ce2049cc53&units=metric`)
       .then(response => response.json())
       .then(data => {
-        speak(`The weather in ${location} is ${data.weather[0].description} with a temperature of ${data.main.temp}°C.`);
+        const weatherInfo = `The weather in ${location} is ${data.weather[0].description} with a temperature of ${data.main.temp}°C.`;
+        speak(weatherInfo);
+        setWeather(weatherInfo)
       })
-      .catch(() => speak("Sorry, I couldn't fetch the weather."));
+      .catch(() => {
+        const errorMsg = "Sorry, I couldn't fetch the weather.";
+        speak(errorMsg);
+      });
   };
 
   const playSong = (query) => {
@@ -178,7 +188,9 @@ const App = () => {
     fetch('https://official-joke-api.appspot.com/random_joke')
       .then(response => response.json())
       .then(data => {
-        speak(`${data.setup}... ${data.punchline}`);
+        const Joke=`${data.setup}... ${data.punchline}`
+        speak(Joke);
+        setJoke(Joke)
       })
       .catch(() => speak("Sorry, I couldn't fetch a joke."));
   };
@@ -186,7 +198,9 @@ const App = () => {
   // Perform calculations
   const calculateMath = (expression) => {
     try {
-      speak(`The result is ${eval(expression)}`);
+      const calculation =`The result is ${eval(expression)}`
+      speak(calculation);
+      setMath(calculation)
     } catch {
       speak("Sorry, I couldn't calculate that.");
     }
@@ -243,7 +257,7 @@ const App = () => {
       </form>
       
       <div>
-        <button onClick={takeCommand(inputData)} className='gemini-loading-logo'>
+        <button onClick={()=>takeCommand(inputData)} className='gemini-loading-logo'>
           {loading ? <div className='loader'></div> : <i className="fa-solid fa-paper-plane"></i>}
         </button>
       </div>
@@ -263,6 +277,21 @@ const App = () => {
         </div>
       )}
 <div className="answer-container">
+
+  {weather &&(
+    <h3 style={{textAlign:"center"}}>{weather}</h3>
+  )
+  }
+
+{joke &&(
+    <h3 style={{textAlign:"center"}}>{joke}</h3>
+  )
+  }
+
+{math &&(
+    <h3 style={{textAlign:"center"}}>{math}</h3>
+  )
+  }
   {/* Display the response if it exists */}
   {response && (
     <div className="response">
@@ -288,7 +317,7 @@ const App = () => {
   )}
 
   {/* If neither response nor video exist, display the robot */}
-  {!response && !videoId && (
+  {!response && !videoId && !weather && !math && !joke &&(
     <div className="robot-container">
       <h2>Ask Me Anything...!!!</h2>
       <img src={robot} alt="" className="robot-img" />
