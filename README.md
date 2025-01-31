@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>J.A.R.V.I.S. - AI Assistant</title>
+  <h1>J.A.R.V.I.S. - AI Assistant</h1>
 </head>
 <body>
   <h1>Welcome to J.A.R.V.I.S.<br><span class="AI">- The AI Assistant</span></h1>
