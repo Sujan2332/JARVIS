@@ -1,0 +1,178 @@
+/* Global Styles */
+body {
+    background: linear-gradient(145deg, #121212, #1e1e1e);
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header Styling */
+  .gemini-jarvis {
+    font-size: 48px;
+    color: #00ff00;
+    text-shadow: 0px 0px 20px rgba(0, 255, 0, 0.8);
+  }
+  
+  .AI {
+    font-size: 24px;
+    color: #ff007f;
+    text-shadow: 0px 0px 10px rgba(255, 0, 127, 0.6);
+  }
+  
+  /* Textarea for Input */
+  .gemini-textarea {
+    background: #282828;
+    border: 2px solid #444444;
+    color: #fff;
+    padding: 15px;
+    width: 70%;
+    margin: 10px 0;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .gemini-textarea:focus {
+    outline: none;
+    border-color: #00ff00;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+  }
+  
+  /* Mic Button */
+  .gemini-mic-logo {
+    background: #444444;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .gemini-mic-logo i {
+    color: #00ff00;
+  }
+  
+  .gemini-mic-logo:hover {
+    background: #00ff00;
+    color: #121212;
+    transform: scale(1.1);
+  }
+  
+  /* Button to Send the Data */
+  .gemini-loading-logo {
+    background: #222222;
+    border: 2px solid #00ff00;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .gemini-loading-logo:hover {
+    background: #00ff00;
+    color: #121212;
+    transform: scale(1.05);
+  }
+  
+  /* Speak and Stop Buttons */
+  .speech-buttons {
+    margin-top: 30px;
+  }
+  
+  .speak-button,
+  .stop-button {
+    background: #ff007f;
+    border: none;
+    padding: 15px 25px;
+    margin: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .speak-button:hover {
+    background: #ff77ff;
+  }
+  
+  .stop-button:hover {
+    background: #ff0000;
+  }
+  
+  /* Video Container */
+  .video-container {
+    margin-top: 40px;
+    color: #00ff00;
+  }
+  
+  .video-container h3 {
+    font-size: 24px;
+    text-shadow: 0px 0px 15px rgba(0, 255, 0, 0.6);
+  }
+  
+  iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 255, 0, 0.4);
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Response Section */
+  .answer-container {
+    margin-top: 50px;
+    background: #222222;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #444444;
+  }
+  
+  .answer-container h2 {
+    color: #ff007f;
+    text-shadow: 0px 0px 10px rgba(255, 0, 127, 0.7);
+  }
+  
+  .robot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .robot-img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(255, 0, 127, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .robot-img:hover {
+    transform: rotate(15deg);
+  }
+  
+  /* Loader */
+  .loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #00ff00;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

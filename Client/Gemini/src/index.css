@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Playwrite+IN:wght@100..400&family=Satisfy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 900;
+}
+
+body {
+  background: linear-gradient(-285deg, #1a1a1a 50%, #4b00b0 90%);  /* 80% black with 10% purple */
+  background: linear-gradient(285deg, #232323, #4b00b0);  /* Black to dark purple gradient */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  font-family: "Edu AU VIC WA NT Hand", serif;
+}
+
+.app-container {
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(285deg, #232323, #4b00b0);  /* Black to dark purple gradient */
+  width: 80vw;
+  gap: 20px;
+  color: white;
+  animation: fadeIn 1s ease-in-out;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Added box-shadow for depth */
+}
+
+.gemini-jarvis {
+  text-decoration: underline;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.gemini-jarvis .AI {
+  text-align: right;
+  text-decoration: none;
+  width: 90%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.gemini-textarea {
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  width: 100%;
+  font-family: "Edu AU VIC WA NT Hand", serif;
+  border: 2px solid rgba(0, 162, 255, 0.5); /* Blue border */
+  transition: all 0.3s ease;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: white;
+  background-color: #2d1c52; /* Dark purple background */
+}
+
+.gemini-textarea:focus {
+  border-color: #6f42c1; /* Lighter purple when focused */
+  box-shadow: 0 0 10px rgba(0, 162, 255, 0.7);
+}
+
+.gemini-loading-logo {
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: #6f42c1;
+  transition: 0.3s ease-in-out;
+}
+
+.gemini-loading-logo:hover {
+  background-color: #9b4de0; /* Lighter purple when hovered */
+  border: 2px solid white;
+  color: white;
+}
+
+.answer-container {
+  width: 100%;
+  text-align: justify;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.answer-container:hover {
+  transform: scale(1.01);
+}
+
+.code-block {
+  border: 2px solid #9b4de0;
+  border-radius: 15px;
+  background: #1d1d1d; /* Dark background for code blocks */
+  color: white;
+  margin: 10px;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(103, 58, 183, 0.6); /* Purple glow effect */
+  opacity: 0;
+  animation: fadeInBlock 0.8s ease-out forwards;
+  transition: 0.3s ease-in-out;
+}
+
+.code-block:hover {
+  background: #3a1e5c; /* Dark purple hover effect */
+  color: white;
+  box-shadow: 0 0 25px rgba(103, 58, 183, 0.8); /* Stronger purple glow */
+}
+
+.code-block .code-heading {
+  background: #6f42c1; /* Purple heading */
+  color: white;
+  padding: 8px 20px;
+  border-radius: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.code-block .code-heading:hover {
+  background: #9b4de0; /* Lighter purple when hovered */
+}
+
+.code-para {
+  padding: 8px 15px;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInBlock {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/*&---------------------------------------  */
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Playwrite+IN:wght@100..400&family=Satisfy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 900;
+}
+
+body {
+  background: linear-gradient(-285deg, #121212 50%, #003366 90%);  /* Black to dark blue gradient */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  font-family: "Edu AU VIC WA NT Hand", serif;
+}
+
+.app-container {
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(285deg, #1c1c1c, #003366); /* Dark blue and black gradient */
+  width: 80vw;
+  gap: 20px;
+  color: white;
+  animation: fadeIn 1s ease-in-out;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Added box-shadow for depth */
+}
+
+.gemini-jarvis {
+  text-decoration: underline;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.gemini-jarvis .AI {
+  text-align: right;
+  text-decoration: none;
+  width: 90%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.gemini-textarea {
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  width: 100%;
+  font-family: "Edu AU VIC WA NT Hand", serif;
+  border: 2px solid rgba(0, 162, 255, 0.5); /* Blue border */
+  transition: all 0.3s ease;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: white;
+  background-color: #2c3e50; /* Darker background for input */
+}
+
+.gemini-textarea:focus {
+  border-color: #1abc9c; /* Lighter blue when focused */
+  box-shadow: 0 0 10px rgba(0, 162, 255, 0.7);
+}
+
+.gemini-loading-logo {
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: #1abc9c; /* Lighter blue */
+  transition: 0.3s ease-in-out;
+}
+
+.gemini-loading-logo:hover {
+  background-color: #16a085; /* Even lighter blue when hovered */
+  border: 2px solid white;
+  color: white;
+}
+
+.answer-container {
+  width: 100%;
+  text-align: justify;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.answer-container:hover {
+  transform: scale(1.01);
+}
+
+.code-block {
+  border: 2px solid #1abc9c; /* Light blue border */
+  border-radius: 15px;
+  background: #2c3e50; /* Darker background for code blocks */
+  color: white;
+  margin: 10px;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 162, 255, 0.6); /* Blue glow effect */
+  opacity: 0;
+  animation: fadeInBlock 0.8s ease-out forwards;
+  transition: 0.3s ease-in-out;
+}
+
+.code-block:hover {
+  background: #34495e; /* Darker shade on hover */
+  color: white;
+  box-shadow: 0 0 25px rgba(0, 162, 255, 0.8); /* Stronger blue glow */
+}
+
+.code-block .code-heading {
+  background: #1abc9c; /* Blue heading */
+  color: white;
+  padding: 8px 20px;
+  border-radius: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.code-block .code-heading:hover {
+  background: #16a085; /* Lighter blue when hovered */
+}
+
+.code-para {
+  padding: 8px 15px;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInBlock {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* &---------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Playwrite+IN:wght@100..400&family=Satisfy&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 900;
+}
+
+body {
+  background: linear-gradient(-285deg, #121212 50%, #003366 90%);  /* Black to dark blue gradient */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  font-family: "Edu AU VIC WA NT Hand", serif;
+}
+
+.app-container {
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(285deg, #1c1c1c, #003366); /* Dark blue and black gradient */
+  width: 80vw;
+  gap: 20px;
+  color: white;
+  animation: fadeIn 1s ease-in-out;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Added box-shadow for depth */
+}
+
+.gemini-jarvis {
+  text-decoration: underline;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.gemini-jarvis .AI {
+  text-align: right;
+  text-decoration: none;
+  width: 90%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.gemini-textarea {
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  width: 100%;
+  font-family: "Edu AU VIC WA NT Hand", serif;
+  border: 2px solid rgba(0, 162, 255, 0.5); /* Blue border */
+  transition: all 0.3s ease;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: white;
+  background-color: #2c3e50; /* Darker background for input */
+}
+
+.gemini-textarea:focus {
+  border-color: #1abc9c; /* Lighter blue when focused */
+  box-shadow: 0 0 10px rgba(0, 162, 255, 0.7);
+}
+
+.gemini-loading-logo {
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: #1abc9c; /* Lighter blue */
+  transition: 0.3s ease-in-out;
+}
+
+.gemini-loading-logo:hover {
+  background-color: #16a085; /* Even lighter blue when hovered */
+  border: 2px solid white;
+  color: white;
+}
+
+.answer-container {
+  width: 100%;
+  text-align: justify;
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.answer-container:hover {
+  transform: scale(1.01);
+}
+
+.code-block {
+  border: 2px solid #1abc9c; /* Light blue border */
+  border-radius: 15px;
+  background: #2c3e50; /* Darker background for code blocks */
+  color: white;
+  margin: 10px;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 162, 255, 0.6); /* Blue glow effect */
+  opacity: 0;
+  animation: fadeInBlock 0.8s ease-out forwards;
+  transition: 0.3s ease-in-out;
+}
+
+.code-block:hover {
+  background: #34495e; /* Darker shade on hover */
+  color: white;
+  box-shadow: 0 0 25px rgba(0, 162, 255, 0.8); /* Stronger blue glow */
+}
+
+.code-block .code-heading {
+  background: #1abc9c; /* Blue heading */
+  color: white;
+  padding: 8px 20px;
+  border-radius: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.code-block .code-heading:hover {
+  background: #16a085; /* Lighter blue when hovered */
+}
+
+.code-para {
+  padding: 8px 15px;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInBlock {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
