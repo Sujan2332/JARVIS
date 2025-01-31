@@ -20,7 +20,11 @@ const API_KEY = process.env.GEMINI_API;  // API Key from .env file
 const genAI = new GoogleGenerativeAI(API_KEY);  // Pass API key here
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });  // Specify Gemini model
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://jarvis-jarvis-jarvis.onrender.com/', // Add your frontend URL
+    methods: 'GET,POST', // Add allowed methods if necessary
+  }));
+  
 app.use(express.json()); // To parse incoming JSON payloads
 
 // Middleware to handle rate-limiting

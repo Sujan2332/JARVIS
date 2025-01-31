@@ -243,7 +243,7 @@ const App = () => {
       </form>
       
       <div>
-        <button onClick={handleFetchData} className='gemini-loading-logo'>
+        <button onClick={takeCommand(inputData)} className='gemini-loading-logo'>
           {loading ? <div className='loader'></div> : <i className="fa-solid fa-paper-plane"></i>}
         </button>
       </div>
