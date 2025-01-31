@@ -1,4 +1,4 @@
-# ✨ *J.A.R.V.I.S. - The AI* 🤖
+# <p align="center">✨ *J.A.R.V.I.S. - The AI* 🤖</p>
 
 ## *Welcome to J.A.R.V.I.S., your personal assistant powered by React and Gemini AI!*
 
@@ -77,4 +77,4 @@ npm start
 ## *License 🔒*
 *This project is licensed under the MIT License - see the LICENSE file for details.*
 
-# *Enjoy using J.A.R.V.I.S., your friendly AI assistant! ✨*
+# <p align="center">*Enjoy using J.A.R.V.I.S., your friendly AI assistant! ✨*</p>
