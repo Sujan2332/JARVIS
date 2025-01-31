@@ -263,7 +263,18 @@ const App = () => {
         </div>
       )}
 <div className="answer-container">
-{videoId ? (
+  {/* Display the response if it exists */}
+  {response && (
+    <div className="response">
+      <button onClick={() => copyToClipboard(response.text)} className="copy-button">
+        <i className="fa-solid fa-copy"></i>
+      </button>
+      <div dangerouslySetInnerHTML={{ __html: formatText(response.text) }} />
+    </div>
+  )}
+
+  {/* Display the video if it exists */}
+  {videoId && (
     <div className="video-container">
       <h3>Now Playing:</h3>
       <iframe
@@ -274,22 +285,16 @@ const App = () => {
         autoPlay
       ></iframe>
     </div>
-  ) : response ? (
-    <div className='response'>
-      <button onClick={() => copyToClipboard(response.text)} className="copy-button">
-      <i class="fa-solid fa-copy"></i>
-      </button>
-      <div dangerouslySetInnerHTML={{ __html: formatText(response.text) }} />
-    </div>
-  ) : (
-    // If neither video nor response, display the robot
+  )}
+
+  {/* If neither response nor video exist, display the robot */}
+  {!response && !videoId && (
     <div className="robot-container">
       <h2>Ask Me Anything...!!!</h2>
       <img src={robot} alt="" className="robot-img" />
     </div>
   )}
-  </div>
-
+</div>
     </div>
   );
 };
