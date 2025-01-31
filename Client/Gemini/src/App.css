@@ -415,7 +415,9 @@ img{
     min-height: 437px;
   }
   img{
-    height: 410px;
+    height: 400px;
+    width: 400px;
+    margin-bottom: 100px;
   }
 .fa-volume-high{
   font-size: 15px;
