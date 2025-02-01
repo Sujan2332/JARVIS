@@ -14,6 +14,7 @@ body {
   background: linear-gradient(-285deg, #1a1a1a 50%, #4b00b0 90%);  /* 80% black with 10% purple */
   background: linear-gradient(285deg, #232323, #4b00b0);  /* Black to dark purple gradient */
   display: flex;
+  min-height: 855px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -381,7 +382,7 @@ img{
   .app-container {
     width: 95vw;
     padding: 10px;
-    margin: 55px 0px;
+    /* margin: 55px 0px; */
   }
 
   .gemini-jarvis {
